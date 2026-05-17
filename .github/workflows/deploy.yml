@@ -26,8 +26,8 @@ jobs:
           fi
           BASE="${APP_URL%/}"
           HEALTH_URL="${BASE}/actuator/health"
-          echo "Waiting 90s for Render to rebuild and restart..."
-          sleep 90
+          echo "Waiting 360s for Render to rebuild and restart..."
+          sleep 360
           MAX_ATTEMPTS=24
           SLEEP_SECS=15
           for i in $(seq 1 "$MAX_ATTEMPTS"); do
